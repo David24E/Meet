@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relLayout1">
+
+                <include layout="@layout/snippet_editmeetingtoolbar"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout1"
+                android:layout_marginTop="30dp"
+                android:id="@+id/relLayout4"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_meeting_title"
+                    android:id="@+id/ivTitle"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivTitle"
+                    android:inputType="textNoSuggestions"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/etMeetingTitle"
+                    android:hint="@string/hTitle"
+                    android:layout_marginStart="20dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout4"
+                android:id="@+id/relLayout5"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_meeting_location"
+                    android:id="@+id/ivLocation"
+                    android:layout_centerVertical="true"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivLocation"
+                    android:inputType="textNoSuggestions"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/etMeetingLocation"
+                    android:hint="@string/hLocation"
+                    android:layout_marginStart="20dp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout5"
+                android:id="@+id/relLayout6"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_notes"
+                    android:id="@+id/ivEmail"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivEmail"
+                    android:inputType="textNoSuggestions"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/etMeetingNotes"
+                    android:hint="@string/hNotes"
+                    android:layout_marginStart="20dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout6"
+                android:id="@+id/relLayout7"
+                android:layout_marginTop="20dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_date_picker"
+                    android:id="@+id/ivDatePicker"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivDatePicker"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:hint="@string/hDate"
+                    android:id="@+id/tvMeetingDate"
+                    android:layout_marginStart="20dp"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/tvMeetingDate"
+                    android:src="@drawable/ic_time_picker"
+                    android:id="@+id/ivTimePicker"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivTimePicker"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:hint="@string/hTime"
+                    android:id="@+id/tvMeetingTime"
+                    android:layout_marginStart="20dp"/>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

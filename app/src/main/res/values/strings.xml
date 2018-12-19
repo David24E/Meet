@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CSC306MeetingApp</string>
+
+
+    <!-- fragment names -->
+    <string name="edit_meeting_fragment">EditMeetingFragment</string>
+    <string name="meeting_fragment">MeetingFragment</string>
+    <string name="view_meetings_fragment">ViewMeetingsFragment</string>
+    <string name="add_meeting_fragment">AddMeetingFragment</string>
+
+    <!-- keys -->
+    <string name="meeting">Meeting</string>
+    <string name="edit_meeting">Edit Meeting</string>
+    <string name="add_meeting">Add Meeting</string>
+    <string name="hTitle">Meeting Title</string>
+    <string name="hLocation">Location</string>
+    <string name="hNotes">Notes</string>
+    <string name="hDate">select meeting date </string>
+    <string name="hTime">select time</string>
+    <string name="google_Maps_API_key">AIzaSyCTZc2O4H5fBoQmFv6uR8BfKNdQU8XheNY</string>
+
+
+</resources>
